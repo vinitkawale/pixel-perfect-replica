@@ -145,24 +145,24 @@ const BusPassTicket = () => {
               {generateTicketId()}
             </p>
 
-            {/* One Day Pass Badge */}
-            <div className="pass-badge py-2 text-center mb-6">
+            {/* One Day Pass Badge - full width */}
+            <div className="pass-badge py-2 text-center mb-6 -mx-4">
               <span className="text-primary-foreground font-bold text-lg">
                 One Day Pass
               </span>
             </div>
 
             {/* PMPML Logo with animation */}
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-8">
               <PMPMLLogo />
             </div>
+          </div>
 
-            {/* Timer/Expired Status with gray background */}
-            <div className="bg-muted/50 rounded-lg py-3 px-4">
-              <p className="text-center text-muted-foreground text-base">
-                {isExpired ? "Expired" : `Expires in ${timeRemaining}`}
-              </p>
-            </div>
+          {/* Timer/Expired Status with gray background - full width */}
+          <div className="bg-muted/50 py-4">
+            <p className="text-center text-muted-foreground text-base">
+              {isExpired ? "Expired" : `Expires in ${timeRemaining}`}
+            </p>
           </div>
         </div>
 
