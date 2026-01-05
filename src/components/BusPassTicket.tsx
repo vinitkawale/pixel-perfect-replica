@@ -75,20 +75,20 @@ const BusPassTicket = () => {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Top Header */}
-      <header className="flex items-center justify-between px-4 py-3 bg-card border-b border-border">
-        <button className="p-1">
-          <X className="w-6 h-6 text-foreground" />
-        </button>
-        <div className="flex items-center gap-6">
-          <span className="text-foreground font-medium">Need Help?</span>
-          <span className="text-foreground font-medium underline">All passes</span>
-        </div>
-      </header>
-
       {/* Main Content */}
       <main className="flex-1 px-4 py-4">
-        <div className="bg-card rounded-lg shadow-lg overflow-hidden max-w-md mx-auto">
+        {/* Top Header - Now inside pink bg */}
+        <header className="flex items-center justify-between px-2 py-3 max-w-md mx-auto">
+          <button className="p-1">
+            <X className="w-6 h-6 text-foreground" />
+          </button>
+          <div className="flex items-center gap-6">
+            <span className="text-foreground font-medium">Need Help?</span>
+            <span className="text-foreground font-medium underline">All passes</span>
+          </div>
+        </header>
+
+        <div className="bg-card rounded-lg shadow-lg overflow-hidden max-w-md mx-auto relative">
           {/* Red Header */}
           <div className="pass-header py-3 px-4 text-center">
             <h1 className="text-lg font-bold text-primary-foreground">
@@ -114,8 +114,15 @@ const BusPassTicket = () => {
               </div>
             </div>
 
-            {/* Dashed Separator */}
-            <div className="dashed-separator my-4"></div>
+            {/* Dashed Separator with half circles */}
+            <div className="relative my-4">
+              {/* Left half circle cutout */}
+              <div className="absolute -left-4 top-1/2 -translate-y-1/2 w-4 h-8 bg-background rounded-r-full"></div>
+              {/* Right half circle cutout */}
+              <div className="absolute -right-4 top-1/2 -translate-y-1/2 w-4 h-8 bg-background rounded-l-full"></div>
+              {/* Dashed line */}
+              <div className="border-t-2 border-dashed border-border mx-2"></div>
+            </div>
 
             {/* Time Details */}
             <div className="grid grid-cols-2 gap-4 mb-4">
