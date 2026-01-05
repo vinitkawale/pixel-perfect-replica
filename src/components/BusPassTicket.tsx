@@ -157,18 +157,20 @@ const BusPassTicket = () => {
               <PMPMLLogo />
             </div>
 
-            {/* Timer/Expired Status */}
-            <p className="text-center text-muted-foreground text-base mb-2">
-              {isExpired ? "Expired" : `Expires in ${timeRemaining}`}
-            </p>
+            {/* Timer/Expired Status with gray background */}
+            <div className="bg-muted/50 rounded-lg py-3 px-4">
+              <p className="text-center text-muted-foreground text-base">
+                {isExpired ? "Expired" : `Expires in ${timeRemaining}`}
+              </p>
+            </div>
           </div>
         </div>
 
         {/* Show QR Code Button */}
         <div className="max-w-md mx-auto mt-4">
-          <button className="w-full pass-button py-4 rounded-lg flex items-center justify-center gap-2">
-            <QrCode className="w-5 h-5" />
-            <span className="font-bold text-lg">Show QR code</span>
+          <button className="w-full bg-[hsl(150,45%,85%)] hover:bg-[hsl(150,45%,80%)] py-4 rounded-lg flex items-center justify-center gap-3 border border-[hsl(150,50%,70%)]">
+            <QrCode className="w-6 h-6 text-[hsl(160,70%,35%)]" strokeWidth={2.5} />
+            <span className="font-semibold text-lg text-[hsl(160,70%,30%)]">Show QR code</span>
           </button>
         </div>
       </main>
