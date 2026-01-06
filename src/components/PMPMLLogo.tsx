@@ -6,7 +6,7 @@ const PMPMLLogo = () => {
       <img 
         src={pmpmlLogo} 
         alt="PMPML Logo" 
-        className="w-36 h-36 object-contain"
+        className="w-44 h-44 object-contain"
       />
     </div>
   );
