@@ -101,7 +101,7 @@ const BusPassTicket = () => {
             <div className="grid grid-cols-3 gap-4 mb-4">
               <div>
                 <p className="text-muted-foreground text-xs mb-1">Pass Type</p>
-                <p className="text-foreground font-bold text-lg">PMC & PCMC</p>
+                <p className="text-foreground font-bold text-base whitespace-nowrap">PMC & PCMC</p>
               </div>
               <div>
                 <p className="text-muted-foreground text-xs mb-1">ID</p>
@@ -159,7 +159,7 @@ const BusPassTicket = () => {
           </div>
 
           {/* Timer/Expired Status with gray background - full width */}
-          <div className="bg-muted/50 py-2.5">
+          <div className="bg-muted/50 py-2">
             <p className="text-center text-muted-foreground text-base">
               {isExpired ? "Expired" : `Expires in ${timeRemaining}`}
             </p>
