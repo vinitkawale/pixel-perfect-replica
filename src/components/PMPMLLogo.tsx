@@ -1,4 +1,4 @@
-import pmpmlLogo from "@/assets/pmpml-logo.png";
+import pmpmlLogo from "@/assets/pmpml-logo-new.png";
 
 const PMPMLLogo = () => {
   return (
