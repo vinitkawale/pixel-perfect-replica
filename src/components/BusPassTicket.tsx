@@ -169,7 +169,7 @@ const BusPassTicket = () => {
 
         {/* Show QR Code Button */}
         <div className="max-w-md mx-auto mt-4 px-2">
-          <button className="w-full bg-[hsl(150,45%,85%)] hover:bg-[hsl(150,45%,80%)] py-5 rounded-lg flex items-center justify-center gap-3 border-2 border-[hsl(150,50%,35%)]">
+          <button className="w-full bg-[hsl(150,45%,85%)] hover:bg-[hsl(150,45%,80%)] py-4 rounded-lg flex items-center justify-center gap-3 border-2 border-[hsl(150,50%,35%)]">
             <QrCode className="w-7 h-7 text-[hsl(160,70%,30%)]" strokeWidth={2.5} />
             <span className="font-semibold text-lg text-[hsl(160,70%,25%)]">Show QR code</span>
           </button>
