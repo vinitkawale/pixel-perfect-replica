@@ -108,5 +108,5 @@
 }
 
 .animate-logo-pulse {
-  animation: logo-pulse 2s ease-in-out infinite;
+  animation: logo-pulse 1.2s ease-in-out infinite;
 }
