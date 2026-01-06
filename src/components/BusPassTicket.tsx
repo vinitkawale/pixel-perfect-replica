@@ -146,8 +146,8 @@ const BusPassTicket = () => {
             </p>
 
             {/* One Day Pass Badge - full width */}
-            <div className="pass-badge py-2 text-center mb-6 -mx-4">
-              <span className="text-primary-foreground font-bold text-lg">
+            <div className="pass-badge py-1.5 text-center mb-6 -mx-4">
+              <span className="text-primary-foreground font-semibold text-base">
                 One Day Pass
               </span>
             </div>
@@ -159,7 +159,7 @@ const BusPassTicket = () => {
           </div>
 
           {/* Timer/Expired Status with gray background - full width */}
-          <div className="bg-muted/50 py-4">
+          <div className="bg-muted/50 py-2.5">
             <p className="text-center text-muted-foreground text-base">
               {isExpired ? "Expired" : `Expires in ${timeRemaining}`}
             </p>
