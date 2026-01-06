@@ -83,7 +83,7 @@ const BusPassTicket = () => {
             <X className="w-6 h-6 text-foreground" />
           </button>
           <div className="flex items-center gap-6">
-            <span className="text-foreground font-medium">Need Help?</span>
+            <span className="text-foreground font-medium underline">Need Help?</span>
             <span className="text-foreground font-medium underline">All passes</span>
           </div>
         </header>
