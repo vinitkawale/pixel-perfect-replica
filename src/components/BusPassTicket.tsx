@@ -76,7 +76,7 @@ const BusPassTicket = () => {
   return (
     <div className="min-h-screen bg-background flex flex-col">
       {/* Main Content */}
-      <main className="flex-1 px-4 py-4">
+      <main className="flex-1 px-4 pt-1 pb-4">
         {/* Top Header - Now inside pink bg */}
         <header className="flex items-center justify-between px-2 py-3 max-w-md mx-auto">
           <button className="p-1">

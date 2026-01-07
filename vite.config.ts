@@ -20,7 +20,7 @@ export default defineConfig(({ mode }) => ({
         name: "PMPML Bus Pass",
         short_name: "PMPML Pass",
         description: "Digital Bus Pass for PMPML",
-        theme_color: "#1a5f4a",
+        theme_color: "#87CEEB",
         background_color: "#ffffff",
         display: "standalone",
         orientation: "portrait",
