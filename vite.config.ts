@@ -17,8 +17,8 @@ export default defineConfig(({ mode }) => ({
       registerType: "autoUpdate",
       includeAssets: ["favicon.ico", "robots.txt"],
       manifest: {
-        name: "PMPML Bus Pass",
-        short_name: "PMPML Pass",
+        name: "apli pmplm",
+        short_name: "apli pmplm",
         description: "Digital Bus Pass for PMPML",
         theme_color: "#87CEEB",
         background_color: "#ffffff",
